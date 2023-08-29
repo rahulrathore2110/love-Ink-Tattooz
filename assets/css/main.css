@@ -114,7 +114,7 @@ header {
 
 
 .fa-brands {
-    color: var(--card-two);
+    color: var(--btn-primary);
     font-size: 14px;
 
 }

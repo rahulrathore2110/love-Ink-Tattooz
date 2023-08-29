@@ -162,7 +162,7 @@ header {
 
 #hero .hero-left {
     background-color: var(--secondry-color);
-    padding: 10px;
+    padding: 60px 10px;
 }
 
 .hero-left>div {
@@ -248,12 +248,21 @@ header {
 
 /* ############################ categories ######################## */
 
-.categories{
+.categories {
+    background-color: var(--secondry-color);
+    padding: 20px;
+    gap: 30px;
+
+}
+.categories > div{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     background-color: var(--secondry-color);
     padding: 20px;
     gap: 30px;
+    max-width: 1280px;
+    margin: auto;
+
 }
 
 .categories .cat-card{

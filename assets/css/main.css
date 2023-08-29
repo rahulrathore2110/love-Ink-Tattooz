@@ -154,7 +154,6 @@ header {
 }
 
 #hero {
-    height: 90vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -198,7 +197,7 @@ header {
 
 
 #hero .hero-right {
-    height: 90vh;
+    
     background-image: url("../images/hero-bg.png");
     background-size: cover;
     background-position: center;
@@ -257,6 +256,22 @@ header {
     gap: 30px;
 }
 
+.categories .cat-card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.cat-card:hover{
+    padding: 10px;
+    transition: .3s ease-in-out;
+}
+
+.cat-card a{
+    text-decoration: none;
+    color: var(--btn-primary);
+}
+
 .categories img{
     border-radius: 20px;
 }
@@ -268,24 +283,36 @@ header {
 
 
 
+
+
 /* ############################ footer ######################## */
 
 footer {
-    background-color: black;
-    color: white;
+    background-color: var(--primary-color);
+    color: black;
     padding: 30px 20px;
     display: grid;
     /* row-gap: 100px; */
 }
 
 footer img {
-    width: 150px;
+    width: 100px;
 }
 
 footer .co-info {
-    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.co-info >div{
     display: grid;
-    row-gap: 10px;
+    max-width: 400px;
+}
+
+.co-info > :nth-child(2) p{
+    font-weight: 200;
 }
 
 footer>:last-child {

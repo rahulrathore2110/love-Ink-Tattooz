@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 html {
     scroll-behavior: smooth;
 }
-:root{
-    --primary-color : #1e39a5;
+
+:root {
+    --primary-color: #e5e4e0;
+    --secondry-color: #f5f4f0;
+    --btn-primary: #000000;
+    --primary-heading: #0c1214;
+    --secondry-heading: #a09385;
+    --card-one: #ffc940;
+    --card-two: #7400d7;
+    --card-three: #ffc940;
 }
 
 * {
@@ -12,9 +19,10 @@ html {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -22,18 +30,30 @@ img {
     width: 100%;
 }
 
-#main-container {
-    max-width: 1180px;
-    margin: auto;
+
+.logo {
+    display: grid;
+    align-items: center;
 }
+
+.primary-btn{
+    padding: 10px 40px;
+    background-color: var(--btn-primary);
+    color: white;
+   border: none;
+   border-radius: 10px;
+}
+
+
 
 /* ############################ Navbar ######################## */
 
 header {
     position: fixed;
     width: 100%;
-    background-color: white;
+    background-color: var(--primary-color);
     top: 0;
+
 }
 
 .hamburger {
@@ -41,13 +61,15 @@ header {
     /* z-index: 1000; */
 }
 
-#close{
+#close {
     visibility: hidden;
     z-index: 999;
 }
-#close a{
+
+#close a {
     color: white;
 }
+
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -59,7 +81,7 @@ header {
 
 }
 
-#navbar > :nth-child(2){
+#navbar> :nth-child(2) {
     display: flex;
 }
 
@@ -69,10 +91,10 @@ header {
 
 .nav-social {
     display: flex;
-    background-color: var(--primary-color);
     padding: 5px 20px;
-    justify-content: flex-end   ;
+    justify-content: flex-end;
     gap: 15px;
+    background-color: var(--secondry-color);
 }
 
 .nav-social div {
@@ -84,14 +106,15 @@ header {
     border-radius: 50%;
 }
 
-.nav-social div:hover {
-    background-color: black;
-    transition: 0.1s ease-in;
-}
 
 .fa-brands {
-    color: white;
-    font-size: 12px;
+    color: var(--card-two);
+    font-size: 14px;
+
+}
+
+.fa-brands:hover {
+    color: var(--card-three);
 
 }
 
@@ -104,25 +127,90 @@ header {
     margin: 0px 20px;
     text-decoration: none;
     list-style: none;
-    
+
 }
 
-.nav-items ul li a{
+.nav-items ul li a {
     color: black;
     font-size: 13px;
 }
 
-.nav-items ul li a:hover{
-    color: var(--primary-color);
+.nav-items ul li a:hover {
+    color: var(--card-two);
     cursor: pointer;
 }
 
 /* ############################ Main Section ######################## */
 
-#main{
-    margin-top: 77px;
+#main-cont {
+    margin-top: 67px;
+
 }
 
+#hero {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../images/hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+   
+}
+
+#hero .hero-left {
+    background-color: var(--secondry-color);
+    padding: 10px;
+}
+
+.hero-left>div {
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    margin: auto;
+    row-gap: 20px;
+}
+
+.hero-left>div>:nth-child(1) {
+    color: var(--primary-heading);
+    font-weight: 500;
+    font-size: 26px;
+}
+.hero-left>div>:nth-child(2) {
+    color: var(--primary-heading);
+    font-weight: 400;
+    font-size: 28px;
+}
+.hero-left>div>:nth-child(3) {
+    color: #414141;
+    font-weight: 200;
+    text-align: justify;
+    font-size: 16px;
+}
+
+
+
+#hero .hero-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.slogon {
+    width: 130px;
+    font-size: 8px;
+}
+
+.re-de{
+    color: var(--card-one);
+}
+
+.hero-left>div>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 
 
@@ -134,7 +222,7 @@ header {
 
 /* ############################ footer ######################## */
 
-footer{
+footer {
     background-color: black;
     color: white;
     padding: 30px 20px;
@@ -142,18 +230,17 @@ footer{
     /* row-gap: 100px; */
 }
 
-footer img{
+footer img {
     width: 150px;
 }
 
-footer .co-info{
+footer .co-info {
     text-align: center;
     display: grid;
     row-gap: 10px;
 }
 
-footer>:last-child{
-    /* background-color: #7a7787; */
+footer>:last-child {
     margin-top: 30px;
     padding-top: 30px;
     padding-left: 10px;

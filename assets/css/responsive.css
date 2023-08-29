@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 700px) {
     .hamburger {
         display: block;
@@ -49,44 +48,56 @@
 
 @media screen and (max-width: 800px) {
 
-   #hero{
-    grid-template-columns: 1fr;
-    height: 110vh;
-   }
+    #hero {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
 
-   .hero-left{
-    height: 60vh;
-   }
+    .hero-left {
+        height: 60vh;
+    }
 
-   .hero-left>div {
-       max-width: 90%;
-       align-items: center;
-    
-   }
+    .hero-left>div {
+        max-width: 90%;
+        align-items: center;
 
-   .hero-left>div>:nth-child(1) {
-       font-size: 16px;
-   }
+    }
 
-   .hero-left>div>:nth-child(2) {
-       font-size: 18px;
-   }
+    .hero-left>div>:nth-child(1) {
+        font-size: 18px;
+    }
 
-   .hero-left>div>:nth-child(3) {
-       font-size: 10px;
-   }
+    .hero-left>div>:nth-child(2) {
+        font-size: 20px;
+    }
 
-   .primary-btn{
-    padding: 10px;
-    font-size: 8px;
-   }
+    .hero-left>div>:nth-child(3) {
+        font-size: 12px;
+    }
+
+    .primary-btn {
+        padding: 10px;
+        font-size: 8px;
+    }
 }
 
 
 @media screen and (max-width: 400px) {
 
-.hero-left>div {
+    .hero-left>div {
         max-width: 100%;
         row-gap: 5px;
+    }
+
+    .hero-left>div>:nth-child(1) {
+        font-size: 16px;
+    }
+
+    .hero-left>div>:nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero-left>div>:nth-child(3) {
+        font-size: 10px;
     }
 }

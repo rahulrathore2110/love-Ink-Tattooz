@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -19,7 +20,7 @@ html {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
+
 }
 
 a {
@@ -36,12 +37,17 @@ img {
     align-items: center;
 }
 
-.primary-btn{
+.primary-btn {
     padding: 10px 40px;
     background-color: var(--btn-primary);
     color: white;
-   border: none;
-   border-radius: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.primary-btn:hover {
+    background-color: var(--card-one);
+    transition: .3s ease;
 }
 
 
@@ -151,11 +157,8 @@ header {
     height: 90vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: url("../images/hero-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-   
+
+
 }
 
 #hero .hero-left {
@@ -178,11 +181,13 @@ header {
     font-weight: 500;
     font-size: 26px;
 }
+
 .hero-left>div>:nth-child(2) {
     color: var(--primary-heading);
     font-weight: 400;
     font-size: 28px;
 }
+
 .hero-left>div>:nth-child(3) {
     color: #414141;
     font-weight: 200;
@@ -193,8 +198,10 @@ header {
 
 
 #hero .hero-right {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    height: 90vh;
+    background-image: url("../images/hero-bg.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .slogon {
@@ -202,7 +209,7 @@ header {
     font-size: 8px;
 }
 
-.re-de{
+.re-de {
     color: var(--card-one);
 }
 
@@ -212,11 +219,52 @@ header {
     gap: 10px;
 }
 
+/* ############################ intro ######################## */
 
 
+.intro {
+
+    margin: auto;
+    display: grid;
+    justify-content: center;
+}
+
+.intro > div {
+    display: grid;
+    max-width: 700px;
+    padding: 80px 20px;
+    row-gap: 20px;
+    text-align: center;
+}
+
+.intro > div > :nth-child(1){
+    font-size: 40px;
+}
+.intro > div > :nth-child(2){
+    font-size: 20px;
+    font-weight: 200;
+    color: var(--secondry-heading);
+}
 
 
+/* ############################ categories ######################## */
 
+.categories{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: var(--secondry-color);
+    padding: 20px;
+    gap: 30px;
+}
+
+.categories img{
+    border-radius: 20px;
+}
+.categories p{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
 
 
 

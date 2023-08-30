@@ -3,7 +3,7 @@
         display: block;
         position: absolute;
         right: 10px;
-        top: 45px;
+        top: 36px;
 
     }
 
@@ -15,7 +15,7 @@
     .nav-menu {
         position: absolute;
         visibility: hidden;
-        background-color: blue;
+        background-color: var(--card-three);
         top: 30px;
         right: 0;
         height: 100vh;
@@ -35,11 +35,15 @@
 
     .nav-items ul li a {
         text-decoration: none;
+        color: var(--btn-primary);
+        font-weight: 600;
+        letter-spacing: .5px;
         color: white;
     }
 
     .nav-items ul li a:hover {
-        color: black;
+        
+        color: var(--btn-primary);
     }
 
 
@@ -65,22 +69,18 @@
     }
 
     .hero-left>div>:nth-child(1) {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .hero-left>div>:nth-child(2) {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .hero-left>div>:nth-child(3) {
-        font-size: 12px;
+        font-size: 16px;
     }
 
-    .primary-btn {
-        padding: 10px;
-        font-size: 8px;
-    }
-
+    
     .hero-right {
         height: 60vh;
     }

@@ -33,9 +33,10 @@ img {
 }
 
 
-.logo {
+.logo a {
     display: grid;
     align-items: center;
+    padding: 5px;
 }
 
 .primary-btn {
@@ -44,7 +45,7 @@ img {
     color: white;
     border: none;
     border-radius: 10px;
-    
+
 }
 
 .primary-btn:hover {
@@ -52,7 +53,7 @@ img {
     transition: .3s ease;
 }
 
-iframe{
+iframe {
     filter: invert();
 }
 
@@ -104,29 +105,28 @@ header {
     display: flex;
     padding: 5px 20px;
     justify-content: flex-end;
-    gap: 15px;
+    column-gap: 25px;
     background-color: var(--secondry-color);
 }
 
-.nav-social div {
-    height: 20px;
-    width: 20px;
+.nav-social div {    
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    
+
 }
 
 
 .fa-brands {
     color: var(--btn-primary);
-    font-size: 14px;
+    font-size: 18px;
 
 }
 
 .fa-brands:hover {
     color: var(--card-three);
-
+    transition: .2s ease-in;
 }
 
 .nav-items ul {
@@ -202,7 +202,7 @@ header {
 
 
 #hero .hero-right {
-    
+
     background-image: url("../images/hero-bg.png");
     background-size: cover;
     background-position: center;
@@ -233,7 +233,7 @@ header {
     justify-content: center;
 }
 
-.intro > div {
+.intro>div {
     display: grid;
     max-width: 700px;
     padding: 80px 20px;
@@ -241,10 +241,11 @@ header {
     text-align: center;
 }
 
-.intro > div > :nth-child(1){
+.intro>div> :nth-child(1) {
     font-size: 40px;
 }
-.intro > div > :nth-child(2){
+
+.intro>div> :nth-child(2) {
     font-size: 20px;
     font-weight: 200;
     color: var(--secondry-heading);
@@ -255,13 +256,14 @@ header {
 
 .categories {
     display: grid;
-    
+
     background-color: var(--secondry-color);
     padding: 20px;
     gap: 30px;
 
 }
-.categories > div{
+
+.categories>div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 20px;
@@ -271,26 +273,27 @@ header {
 
 }
 
-.categories .cat-card{
+.categories .cat-card {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 20px;
     padding-bottom: 10px;
 }
 
-.cat-card:hover{
+.cat-card:hover {
     padding: 10px;
     transition: .3s ease-in-out;
 }
 
-.cat-card a{
+.cat-card a {
     text-decoration: none;
     color: var(--btn-primary);
 }
 
-.categories img{
+.categories img {
     border-radius: 20px;
 }
-.categories p{
+
+.categories p {
     font-weight: 600;
     font-size: 20px;
     text-align: center;
@@ -318,20 +321,20 @@ footer .co-info {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    
+
 }
 
-.co-info a{
+.co-info a {
     text-decoration: none;
     color: var(--btn-primary);
 }
 
-.co-info >div{
+.co-info>div {
     display: grid;
     max-width: 400px;
 }
 
-.co-info > :nth-child(2) p{
+.co-info> :nth-child(2) p {
     font-weight: 300;
 }
 

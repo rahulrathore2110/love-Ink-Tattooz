@@ -8,6 +8,7 @@ let open = document.getElementById("navbars");
 
 
 open.addEventListener("click", () => {
+  console.log("sdff")
   shownav(navbar);
 });
 

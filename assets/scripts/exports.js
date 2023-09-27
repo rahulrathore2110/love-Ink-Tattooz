@@ -13,7 +13,7 @@ let navhead = () => {
             </div>
             <div id="navbar">
                 <div class="logo">
-                    <a href="#"><img src="./assets/images/logo.png" alt="logo"></a>
+                    <a href="../../index.html"><img src="./assets/images/logo.png" alt="logo"></a>
                 </div>
                 <div id="close">
                     <a href="#"><i class="fa-solid fa-xmark"></i></a>
@@ -48,9 +48,9 @@ let footersec = () => {
 
             <div class="co-info">
                 <div>
-                    <!-- <div>
-                        <img src="./assets/images/footer-logo.png" alt="">
-                    </div> -->
+                    <div>
+                        <a href="../../index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+                    </div> 
 
                     <h4>Address</h4>
                     <p>G-floor C-100, 40 Feet Road, Molar Band Extn Badarpur New Delhi-110044</p>

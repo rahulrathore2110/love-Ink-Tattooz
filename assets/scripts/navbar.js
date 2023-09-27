@@ -19,6 +19,7 @@ close.addEventListener("click", () => {
 
 
 
+
 function shownav(navbar) {
   navbar.style.visibility = "visible";
   open.style.visibility = "hidden";
